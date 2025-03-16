@@ -41,4 +41,8 @@ jobs:
       - run: |
           aws eks update-kubeconfig --region us-east-1 --name nodejs-cluster
           kubectl apply -f k8s/
+<<<<<<< HEAD
           kubectl rollout status deployment/nodejs-app
+=======
+          kubectl rollout status deployment/nodejs-app
+>>>>>>> 7fb44a9673cab93204cc6b9119f76ca0035dfc9e

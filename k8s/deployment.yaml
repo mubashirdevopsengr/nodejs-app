@@ -16,4 +16,8 @@ spec:
       - name: nodejs-app
         image: mubashirsaleem/nodejs-app:latest
         ports:
+<<<<<<< HEAD
         - containerPort: 3000
+=======
+        - containerPort: 3000
+>>>>>>> 7fb44a9673cab93204cc6b9119f76ca0035dfc9e

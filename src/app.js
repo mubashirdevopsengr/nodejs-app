@@ -8,4 +8,8 @@ app.get('/', (req, res) => {
 
 app.listen(port, '0.0.0.0', () => {
     console.log(`Server running on port ${port}`);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 7fb44a9673cab93204cc6b9119f76ca0035dfc9e
