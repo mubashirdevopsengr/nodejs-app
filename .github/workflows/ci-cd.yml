@@ -39,9 +39,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t mubashirdevopsengr/nodejs-app:latest .
+        run: docker build -t mubashirsaleem/nodejs-app:latest .
 
       - name: Push Docker Image to Docker Hub
-        run: docker push mubashirdevopsengr/nodejs-app:latest
+        run: docker push mubashirsaleem/nodejs-app:latest
 
   
