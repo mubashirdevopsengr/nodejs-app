@@ -3,13 +3,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send('Hello, Node.js App is Running!');
+    res.send('Node.js app is running!');
 });
 
-app.get('/health', (req, res) => {
-    res.send({ status: 'UP' });
-});
-
-app.listen(port, () => {
-    console.log(`App running on http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server running on port ${port}`);
 });
