@@ -19,18 +19,16 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        working-directory: nodejs-app
         run: npm install
 
       - name: Run tests
-        working-directory: nodejs-app
         run: npm test
 
       - name: Build Docker image
-        run: docker build -t your-dockerhub-username/nodejs-app:latest ./nodejs-app
+        run: docker build -t mubashirsaleem/nodejs-app:latest .
 
       - name: Log in to Docker Hub
         run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
       - name: Push Docker image to Docker Hub
-        run: docker push your-dockerhub-username/nodejs-app:latest
+        run: docker push mubashirsaleem/nodejs-app:latest
